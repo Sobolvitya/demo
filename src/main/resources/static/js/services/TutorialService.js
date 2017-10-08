@@ -1,5 +1,5 @@
 app.service("tutorialService", ["$http", function ($http) {
-    var url = "http://localhost:8080/controller/tutorial";
+    var url = "https://frost-db.herokuapp.com/controller/tutorial";
 
     return {
         getTutorials: function() {

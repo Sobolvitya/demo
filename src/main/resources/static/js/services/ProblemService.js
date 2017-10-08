@@ -1,5 +1,5 @@
 app.service("problemService", ["$http", function ($http) {
-    var url = "http://localhost:8080/controller/task";
+    var url = "https://frost-db.herokuapp.com/controller/task";
     return {
         getTasks: function() {
             return $http.get(url + "/list/");

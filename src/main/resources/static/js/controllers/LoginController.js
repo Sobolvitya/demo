@@ -1,7 +1,7 @@
 app.controller('loginController', ["$http", "$scope", "$location",
     function ($http, $scope, $location) {
 
-    var url = "http://localhost:8080/controller/user";
+    var url = "https://frost-db.herokuapp.com/controller/user";
 
     $scope.user_email = undefined;
     $scope.password = undefined;
