@@ -1,0 +1,16 @@
+<div class="row center-block">
+
+    <form class="form-signin center-block" ng>
+        <label for="name" class="sr-only"> Task Name</label>
+        <input type="text" class="form-control" id = "name" ng-model="newTask.name" placeholder="Task name">
+        <label for="maxScore" class="sr-only">Max Score</label>
+        <input type="text" class="form-control" id="maxScore" ng-model="newTask.maxScore" placeholder="Max Score">
+        <label for="Level" class="sr-only"> Task Level</label>
+        <input type="text" class="form-control" id="Level" ng-model="newTask.level" placeholder="Task Level">
+<label for="description" class="sr-only"> Task description</label>
+        <input type="text" class="form-control" id="description" ng-model="newTask.description" placeholder="Task description">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="addTask(newTask);"> Submit </button>
+    </form>
+
+</div>

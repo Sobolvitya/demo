@@ -1,0 +1,10 @@
+spring:
+#  datasource:
+#      url: jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_a7fc062f8e63de2
+#      username: b169259e80b190
+#      password: b791bc92
+#      driver-class-name: com.mysql.jdbc.Driver
+#  data:
+#    mongodb:
+#      uri: mongodb://vitya:11111@ds141428.mlab.com:41428/heroku_69g6r4s4
+

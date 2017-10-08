@@ -1,0 +1,16 @@
+<div class="row center-block">
+    <div class="text-right"><a href="#/createProblem"><button type="button" class="btn btn-lg btn-primary"> Add Task </button></a></div>
+    <div class="navbar-form nav-tabs text-right"><input class="form-control glyphicon-search" ng-model="searchable" type="text" placeholder="search"><button class="btn btn-sm btn-primary" ng-click="search(searchable)">search</button></div>
+    <h1>{{message}}</h1>
+    <div ng-repeat="task in tasks" class="col-md-6 col-lg-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <a ng-href="#/problem/{{task.id}}" ng-click="setTask(task)"><h2 class="panelText"> {{ task.name }}</h2></a>
+            </div>
+            <div class="panel-body">
+                <p> Level: {{ task.level }} </p>
+                <p> Max Score : {{ task.maxScore }} </p>
+            </div>
+        </div>
+    </div>
+</div>

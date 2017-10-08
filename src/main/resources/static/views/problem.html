@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="jumbotron" ng-if="!editMode">
+        <button class="text-right btn btn-lg btn-toolbar" ng-click="changeEditMode()">Edit</button>
+        <h1> {{ currentTask.name }} </h1>
+        <p class="lead">{{currentTask.description}}</p>
+        <p>Max Score: {{ currentTask.maxScore }}</p>
+        <p>Level : {{ currentTask.level }}</p>
+        <a ng-href="#/problems"><button class="text-right btn btn-lg btn-primary"> Return </button></a>
+        <a ng-href="#/problems"><button class="text-right btn btn-lg btn-danger" ng-click="removeTask(currentTask.id)">Delete</button></a>
+    </div>
+    <div class="jumbotron" ng-if="editMode">
+        <h1>Name : <input type="text" ng-model="currentTask.name" ng-if="editMode"></h1>
+        <p class="lead">Description: <input type="text" ng-model="currentTask.description"></p>
+        <p>Max Score: <input type="text" ng-model="currentTask.maxScore"></p>
+        <p>Level : <input type="text" ng-model="currentTask.level"></p>
+        <button type="submit" class="text-right btn btn-lg btn-primary" ng-click="changeEditMode();updateTask(currentTask);"> Submit </button>
+    </div>
+</div>
